@@ -9,6 +9,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.util.Log;
 import android.view.View;
 import android.view.Window;
 import android.view.inputmethod.InputMethodManager;
@@ -20,14 +21,19 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.cloudant.sync.documentstore.DocumentStore;
+import com.cloudant.sync.documentstore.DocumentStoreNotOpenedException;
 import com.jalberto.homemarketlist.R;
 import com.jalberto.homemarketlist.dao.CategoryDAO;
 import com.jalberto.homemarketlist.dao.ItemDAO;
+import com.jalberto.homemarketlist.dao.cloudant.CategoryCloudantDAO;
+import com.jalberto.homemarketlist.dao.cloudant.ItemCloudantDAO;
 import com.jalberto.homemarketlist.dao.sharedpreferences.CategorySharedPreferencesDAO;
 import com.jalberto.homemarketlist.dao.sharedpreferences.ItemSharedPreferencesDAO;
 import com.jalberto.homemarketlist.model.Category;
 import com.jalberto.homemarketlist.model.Item;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -77,10 +83,23 @@ public class MainActivity extends AppCompatActivity
 
         loadPreferences();
 
-        applicationDataSharedPreferences = getApplicationContext().getSharedPreferences(getString(R.string.application_data_shared_preferences_file_name), Context.MODE_PRIVATE);
-
+        // Shared preferences storage
+        /*applicationDataSharedPreferences = getApplicationContext().getSharedPreferences(getString(R.string.application_data_shared_preferences_file_name), Context.MODE_PRIVATE);
         categoryDAO = new CategorySharedPreferencesDAO(applicationDataSharedPreferences);
-        itemDAO = new ItemSharedPreferencesDAO(applicationDataSharedPreferences, categoryDAO); //change to factory pattern (DAOFactory.getItemDAO(Configuration.DAOSource)
+        itemDAO = new ItemSharedPreferencesDAO(applicationDataSharedPreferences, categoryDAO); //change to factory pattern (DAOFactory.getItemDAO(Configuration.DAOSource)*/
+
+        // Cloudant storage
+
+        DocumentStore ds = null;
+        File path = getApplicationContext().getDir("documentstores", Context.MODE_PRIVATE);
+        try {
+            ds = DocumentStore.getInstance(new File(path, "home_market_list_database"));
+        } catch (DocumentStoreNotOpenedException e) {
+            Log.d("ERROR", "Error creating document store.");
+            e.printStackTrace();
+        }
+        categoryDAO = new CategoryCloudantDAO(ds);
+        itemDAO = new ItemCloudantDAO(ds, categoryDAO);
 
         loadData();
 
@@ -415,7 +434,6 @@ public class MainActivity extends AppCompatActivity
                         item.setIsOutOf(true);
                     }
 
-                    itemDAO.delete(item);
                     itemDAO.add(item);
                     displayItemsCheckBoxList();
 
@@ -436,7 +454,6 @@ public class MainActivity extends AppCompatActivity
                         item.setIsOutOf(true);
                     }
 
-                    itemDAO.delete(new Item(oldItemName, category));
                     itemDAO.add(item);
                     displayItemsCheckBoxList();
                     Toast.makeText(getApplicationContext(), getResources().getString(R.string.message_edited_item), Toast.LENGTH_SHORT).show();
@@ -445,7 +462,7 @@ public class MainActivity extends AppCompatActivity
                 case TASK_CODE_DELETE_ITEM:
                 {
                     String itemName = data.getStringExtra(getResources().getString(R.string.intent_extra_item_name));
-                    itemDAO.delete(new Item(itemName, new Category("")));
+                    itemDAO.delete(itemDAO.getByName(itemName));
                     displayItemsCheckBoxList();
                     Toast.makeText(getApplicationContext(), getResources().getString(R.string.message_deleted_item), Toast.LENGTH_SHORT).show();
                     break;
