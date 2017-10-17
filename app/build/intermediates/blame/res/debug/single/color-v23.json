@@ -2,5 +2,9 @@
     {
         "merged": "/home/jalberto/AndroidStudioProjects/HomeMarketList/app/build/intermediates/res/merged/debug/color-v23/abc_color_highlight_material.xml",
         "source": "/home/jalberto/AndroidStudioProjects/HomeMarketList/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/color-v23/abc_color_highlight_material.xml"
+    },
+    {
+        "merged": "/home/jalberto/data/AndroidStudioProjects/HomeMarketList/app/build/intermediates/res/merged/debug/color-v23/abc_color_highlight_material.xml",
+        "source": "/home/jalberto/.android/build-cache/f471aafc8a991c3c2c56111a57e439e32b9f3d64/output/res/color-v23/abc_color_highlight_material.xml"
     }
 ]

@@ -53,7 +53,7 @@ public class ItemCloudantDAO extends AbstractCloudantDAO implements ItemDAO
     public List<Item> getAll()
     {
         List<Item> itemsList = new ArrayList<Item>();
-
+        load();
         Set<String> keys = itemsMap.keySet();
 
         for (String key : keys)
@@ -69,7 +69,7 @@ public class ItemCloudantDAO extends AbstractCloudantDAO implements ItemDAO
     public Map<Category, List<Item>> getAllGroupedByCategory()
     {
         HashMap<Category, List<Item>> allByCategory = new HashMap<Category, List<Item>>();
-
+        load();
         for (Item item : getAll())
         {
             if (allByCategory.containsKey(item.getCategory()))
@@ -209,7 +209,7 @@ public class ItemCloudantDAO extends AbstractCloudantDAO implements ItemDAO
     @Override
     public void synchronize() throws Exception
     {
-
+        super.synchronize();
     }
 
     private void populate() {

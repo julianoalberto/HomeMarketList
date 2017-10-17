@@ -84,7 +84,6 @@
             android:id="@+id/addItemButton"
             android:src="@drawable/plus24"
             android:onClick="addItem"/>
-
     </LinearLayout>
 
     <!--Items panel -->
@@ -97,8 +96,6 @@
             android:layout_height="match_parent"
             android:id="@+id/itemsLayout"
             android:orientation="vertical">
-
-
         </LinearLayout>
     </ScrollView>
 </LinearLayout>

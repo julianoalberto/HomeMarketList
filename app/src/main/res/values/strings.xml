@@ -33,6 +33,7 @@
         <item>Carnes</item>
         <item>Doces</item>
     </string-array>
+    <string name="title_activity_configuration">ConfigurationActivity</string>
 
 
 </resources>

@@ -6,5 +6,13 @@
     {
         "merged": "/home/jalberto/AndroidStudioProjects/HomeMarketList/app/build/intermediates/res/merged/debug/anim-v21/design_bottom_sheet_slide_out.xml",
         "source": "/home/jalberto/AndroidStudioProjects/HomeMarketList/app/build/intermediates/exploded-aar/com.android.support/design/23.2.1/res/anim-v21/design_bottom_sheet_slide_out.xml"
+    },
+    {
+        "merged": "/home/jalberto/data/AndroidStudioProjects/HomeMarketList/app/build/intermediates/res/merged/debug/anim-v21/design_bottom_sheet_slide_out.xml",
+        "source": "/home/jalberto/.android/build-cache/91d96ffc0a0c8689b58e30c8b1958578586ccb5e/output/res/anim-v21/design_bottom_sheet_slide_out.xml"
+    },
+    {
+        "merged": "/home/jalberto/data/AndroidStudioProjects/HomeMarketList/app/build/intermediates/res/merged/debug/anim-v21/design_bottom_sheet_slide_in.xml",
+        "source": "/home/jalberto/.android/build-cache/91d96ffc0a0c8689b58e30c8b1958578586ccb5e/output/res/anim-v21/design_bottom_sheet_slide_in.xml"
     }
 ]

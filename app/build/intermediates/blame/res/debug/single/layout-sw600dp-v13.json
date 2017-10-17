@@ -2,5 +2,9 @@
     {
         "merged": "/home/jalberto/AndroidStudioProjects/HomeMarketList/app/build/intermediates/res/merged/debug/layout-sw600dp-v13/design_layout_snackbar.xml",
         "source": "/home/jalberto/AndroidStudioProjects/HomeMarketList/app/build/intermediates/exploded-aar/com.android.support/design/23.2.1/res/layout-sw600dp-v13/design_layout_snackbar.xml"
+    },
+    {
+        "merged": "/home/jalberto/data/AndroidStudioProjects/HomeMarketList/app/build/intermediates/res/merged/debug/layout-sw600dp-v13/design_layout_snackbar.xml",
+        "source": "/home/jalberto/.android/build-cache/91d96ffc0a0c8689b58e30c8b1958578586ccb5e/output/res/layout-sw600dp-v13/design_layout_snackbar.xml"
     }
 ]
