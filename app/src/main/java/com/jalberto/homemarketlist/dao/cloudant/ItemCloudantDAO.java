@@ -53,7 +53,6 @@ public class ItemCloudantDAO extends AbstractCloudantDAO implements ItemDAO
     public List<Item> getAll()
     {
         List<Item> itemsList = new ArrayList<Item>();
-        load();
         Set<String> keys = itemsMap.keySet();
 
         for (String key : keys)
@@ -69,7 +68,6 @@ public class ItemCloudantDAO extends AbstractCloudantDAO implements ItemDAO
     public Map<Category, List<Item>> getAllGroupedByCategory()
     {
         HashMap<Category, List<Item>> allByCategory = new HashMap<Category, List<Item>>();
-        load();
         for (Item item : getAll())
         {
             if (allByCategory.containsKey(item.getCategory()))
@@ -97,7 +95,7 @@ public class ItemCloudantDAO extends AbstractCloudantDAO implements ItemDAO
     public boolean add(Item item)
     {
         itemsMap.put(item.getName(), item);
-        DocumentRevision newRevision = itemToRevision(item);
+        /*DocumentRevision newRevision = itemToRevision(item);
         try {
             delete(item);
             documentStore.database().create(newRevision);
@@ -107,9 +105,9 @@ public class ItemCloudantDAO extends AbstractCloudantDAO implements ItemDAO
             e.printStackTrace();
         } catch (AttachmentException e) {
             e.printStackTrace();
-        }
+        }*/
 
-        return false;
+        return true;
     }
 
     @Override
@@ -133,12 +131,17 @@ public class ItemCloudantDAO extends AbstractCloudantDAO implements ItemDAO
             e.printStackTrace();
         }
 
-        return false;
+        return true;
     }
 
     @Override
     public Item set(Item oldItem, Item newItem)
     {
+        if (!oldItem.getName().equals(newItem.getName()))
+        {
+            delete(oldItem);
+        }
+        add(newItem);
         return null;
     }
 
@@ -178,14 +181,6 @@ public class ItemCloudantDAO extends AbstractCloudantDAO implements ItemDAO
     @Override
     public void save() throws Exception
     {
-       /*
-        for (String key : deletedItemsMap.keySet()) {
-            Item item = deletedItemsMap.get(key);
-            DocumentRevision revision = documentStore.database().read(item.getName());
-            documentStore.database().delete(revision);
-        }
-
-
         for (String key : itemsMap.keySet()) {
             Item item = itemsMap.get(key);
             DocumentRevision newRevision = itemToRevision(item);
@@ -203,7 +198,6 @@ public class ItemCloudantDAO extends AbstractCloudantDAO implements ItemDAO
                 documentStore.database().create(newRevision);
             }
         }
-        */
     }
 
     @Override

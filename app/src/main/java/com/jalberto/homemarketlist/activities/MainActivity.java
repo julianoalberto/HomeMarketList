@@ -212,6 +212,7 @@ public class MainActivity extends AppCompatActivity
 
                 itemCheckBox.setButtonDrawable(getResources().getDrawable(R.drawable.custom_checkbox_home));
 
+                // TODO
                 itemCheckBox.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener()
                 {
                     @Override
@@ -268,6 +269,7 @@ public class MainActivity extends AppCompatActivity
                     itemCheckBoxList.add(itemCheckBox);
                     itemCheckBox.setButtonDrawable(getResources().getDrawable(R.drawable.custom_checkbox_market));
 
+                    //TODO
                     itemCheckBox.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener()
                     {
 
@@ -437,6 +439,7 @@ public class MainActivity extends AppCompatActivity
                     }
 
                     itemDAO.add(item);
+
                     displayItemsCheckBoxList();
 
                     Toast.makeText(getApplicationContext(), getResources().getString(R.string.message_added_item), Toast.LENGTH_SHORT).show();
@@ -456,7 +459,10 @@ public class MainActivity extends AppCompatActivity
                         item.setIsOutOf(true);
                     }
 
-                    itemDAO.add(item);
+                    Item oldItem = new Item(oldItemName, item.getCategory());
+                    itemDAO.set(oldItem, item);
+                    //itemDAO.add(item);
+
                     displayItemsCheckBoxList();
                     Toast.makeText(getApplicationContext(), getResources().getString(R.string.message_edited_item), Toast.LENGTH_SHORT).show();
                     break;
@@ -465,6 +471,7 @@ public class MainActivity extends AppCompatActivity
                 {
                     String itemName = data.getStringExtra(getResources().getString(R.string.intent_extra_item_name));
                     itemDAO.delete(itemDAO.getByName(itemName));
+
                     displayItemsCheckBoxList();
                     Toast.makeText(getApplicationContext(), getResources().getString(R.string.message_deleted_item), Toast.LENGTH_SHORT).show();
                     break;
