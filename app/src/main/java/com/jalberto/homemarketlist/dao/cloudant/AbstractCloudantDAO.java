@@ -33,6 +33,12 @@ public abstract class AbstractCloudantDAO implements BaseDAO
 
     public void synchronize() throws Exception
     {
+        push();
+        pull();
+    }
+
+    private void push() throws Exception
+    {
         URI uri = new URI("https://almosichertionnotherable:a905cfba5bd8e167d727df7f570fd347a086e38e@23c99e3f-de9d-47a2-ad36-718bbba8696c-bluemix.cloudant.com/homemarketlist");
         // Create a replicator that replicates changes from the local
         // DocumentStore to the remote database.
@@ -47,6 +53,29 @@ public abstract class AbstractCloudantDAO implements BaseDAO
         replicator.getEventBus().unregister(listener);
         if (replicator.getState() != Replicator.State.COMPLETE) {
             System.err.println("Error replicating TO remote");
+            System.err.println(listener.errors);
+        } else {
+            System.out.println(String.format("Replicated %d documents in %d batches",
+                    listener.documentsReplicated, listener.batchesReplicated));
+        }
+    }
+
+    private void pull() throws Exception
+    {
+        URI uri = new URI("https://almosichertionnotherable:a905cfba5bd8e167d727df7f570fd347a086e38e@23c99e3f-de9d-47a2-ad36-718bbba8696c-bluemix.cloudant.com/homemarketlist");
+        // Create a replicator that replicates changes from the local
+        // DocumentStore to the remote database.
+        Replicator replicator = ReplicatorBuilder.pull().from(uri).to(documentStore).build();
+
+        // Use a CountDownLatch to provide a lightweight way to wait for completion
+        CountDownLatch latch = new CountDownLatch(1);
+        Listener listener = new Listener(latch);
+        replicator.getEventBus().register(listener);
+        replicator.start();
+        latch.await();
+        replicator.getEventBus().unregister(listener);
+        if (replicator.getState() != Replicator.State.COMPLETE) {
+            System.err.println("Error replicating FROM remote");
             System.err.println(listener.errors);
         } else {
             System.out.println(String.format("Replicated %d documents in %d batches",
