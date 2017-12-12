@@ -2,94 +2,76 @@
 <items version="2" >
 
     <item
-        is-multidex="true"
-        jar="/home/jalberto/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.1.1/38d2b3c0c89af5b937fd98c3e558bf6b58c14aa2/jackson-databind-2.1.1.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="/home/jalberto/.android/build-cache/a2d5be5d58557ae8b776dd2655cffd6f232e8f0e/output/jars/classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="25.0.0"
-        sha1="38d2b3c0c89af5b937fd98c3e558bf6b58c14aa2">
-        <dex dex="/home/jalberto/data/AndroidStudioProjects/HomeMarketList/app/build/intermediates/transforms/dex/debug/folders/1000/10/jackson-databind-2.1.1_6b8fe826f43f48a9b0113abf7fa51c3215423b8c/classes.dex" />
+        sha1="3be474b1b21b31cf2fa93fe6bd641ae108d96452">
+        <dex dex="/home/jalberto/data/AndroidStudioProjects/HomeMarketList/app/build/intermediates/pre-dexed/debug/classes_469b12b4ab9ede9a070e3ca042b61a26e0f6fb70.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="/home/jalberto/data/software/android-studio/gradle/m2repository/commons-io/commons-io/2.4/commons-io-2.4.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="/home/jalberto/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/23.2.1/support-annotations-23.2.1.jar"
+        jumboMode="false"
         optimize="true"
         revision="25.0.0"
-        sha1="b1b6ea3b7e4aa4f492509a4952029cd8e48019ad">
-        <dex dex="/home/jalberto/data/AndroidStudioProjects/HomeMarketList/app/build/intermediates/transforms/dex/debug/folders/1000/10/commons-io-2.4_dca58654ce68097193ed4977db11de83f12d9372/classes.dex" />
+        sha1="ccb693bc0774fcb637246f7360de25b4af7df318">
+        <dex dex="/home/jalberto/data/AndroidStudioProjects/HomeMarketList/app/build/intermediates/pre-dexed/debug/support-annotations-23.2.1_c0a230aa19d5557acb2cdb8a97d9b81ad52ab624.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="/home/jalberto/.android/build-cache/059dccde0ba024a002cbf137be07731169278cfb/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
-        <dex dex="/home/jalberto/data/AndroidStudioProjects/HomeMarketList/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_694d9f058058f52f680075e56a4458534c14ef85/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
+        is-multidex="false"
         jar="/home/jalberto/.android/build-cache/fe0ab31ff64d241b469bc06179803d493841ca28/output/jars/classes.jar"
-        jumboMode="true"
+        jumboMode="false"
         optimize="true"
         revision="25.0.0"
         sha1="e3885783ff8926ed9e2fdcd16816c2e1e73e7aee">
-        <dex dex="/home/jalberto/data/AndroidStudioProjects/HomeMarketList/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_8d407ff0aa61e945448a07cf77680f7ca4a320cd/classes.dex" />
+        <dex dex="/home/jalberto/data/AndroidStudioProjects/HomeMarketList/app/build/intermediates/pre-dexed/debug/classes_8d407ff0aa61e945448a07cf77680f7ca4a320cd.jar" />
     </item>
     <item
-        is-multidex="true"
+        is-multidex="false"
+        jar="/home/jalberto/data/software/android-studio/gradle/m2repository/commons-io/commons-io/2.4/commons-io-2.4.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="b1b6ea3b7e4aa4f492509a4952029cd8e48019ad">
+        <dex dex="/home/jalberto/data/AndroidStudioProjects/HomeMarketList/app/build/intermediates/pre-dexed/debug/commons-io-2.4_dca58654ce68097193ed4977db11de83f12d9372.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="/home/jalberto/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.1.1/b01cc83e745fc4425a3968fafbf8e5b8254a6dd/jackson-annotations-2.1.1.jar"
-        jumboMode="true"
+        jumboMode="false"
         optimize="true"
         revision="25.0.0"
         sha1="0b01cc83e745fc4425a3968fafbf8e5b8254a6dd">
-        <dex dex="/home/jalberto/data/AndroidStudioProjects/HomeMarketList/app/build/intermediates/transforms/dex/debug/folders/1000/10/jackson-annotations-2.1.1_cb8b50d2d6410330cf56f99bc8486dcc0286cab8/classes.dex" />
+        <dex dex="/home/jalberto/data/AndroidStudioProjects/HomeMarketList/app/build/intermediates/pre-dexed/debug/jackson-annotations-2.1.1_cb8b50d2d6410330cf56f99bc8486dcc0286cab8.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="/home/jalberto/.android/build-cache/91d96ffc0a0c8689b58e30c8b1958578586ccb5e/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="72961d8b453b46e277702f18de9d210bc019e36e">
-        <dex dex="/home/jalberto/data/AndroidStudioProjects/HomeMarketList/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_2494a26de0001478d48d2f4cb0ee2bce6baeca1a/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/jalberto/data/software/android-studio/gradle/m2repository/commons-codec/commons-codec/1.10/commons-codec-1.10.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="4b95f4897fa13f2cd904aee711aeafc0c5295cd8">
-        <dex dex="/home/jalberto/data/AndroidStudioProjects/HomeMarketList/app/build/intermediates/transforms/dex/debug/folders/1000/10/commons-codec-1.10_28863776ab09b57466e507fb925f215e0445e493/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/jalberto/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.1.1/82ad1c5f92f6dcc6291f5c46ebacb975eaa844de/jackson-core-2.1.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="82ad1c5f92f6dcc6291f5c46ebacb975eaa844de">
-        <dex dex="/home/jalberto/data/AndroidStudioProjects/HomeMarketList/app/build/intermediates/transforms/dex/debug/folders/1000/10/jackson-core-2.1.1_c6439ad549daa9de0f2235ff0abfa0de1272a1d0/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/jalberto/.gradle/caches/modules-2/files-2.1/com.cloudant/cloudant-sync-datastore-android/2.0.2/ae70de11fb3d3587053b68c5c974bb2d84b6d2/cloudant-sync-datastore-android-2.0.2.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="00ae70de11fb3d3587053b68c5c974bb2d84b6d2">
-        <dex dex="/home/jalberto/data/AndroidStudioProjects/HomeMarketList/app/build/intermediates/transforms/dex/debug/folders/1000/10/cloudant-sync-datastore-android-2.0.2_dacc173da4fe99b1263a1160920c7277472c26e6/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
+        is-multidex="false"
         jar="/home/jalberto/.gradle/caches/modules-2/files-2.1/com.cloudant/cloudant-http/2.7.0/37daad76873ff1699bb9c13d4994fefe741876b1/cloudant-http-2.7.0.jar"
-        jumboMode="true"
+        jumboMode="false"
         optimize="true"
         revision="25.0.0"
         sha1="37daad76873ff1699bb9c13d4994fefe741876b1">
-        <dex dex="/home/jalberto/data/AndroidStudioProjects/HomeMarketList/app/build/intermediates/transforms/dex/debug/folders/1000/10/cloudant-http-2.7.0_26d5788ff15366ed047fdf3320c0e7bda09d1a4c/classes.dex" />
+        <dex dex="/home/jalberto/data/AndroidStudioProjects/HomeMarketList/app/build/intermediates/pre-dexed/debug/cloudant-http-2.7.0_26d5788ff15366ed047fdf3320c0e7bda09d1a4c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/jalberto/.android/build-cache/fc8de4034abccfc701eabdc37b5396c762d71f20/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="673d77a5bbddd766037f088e775df525c46407f0">
+        <dex dex="/home/jalberto/data/AndroidStudioProjects/HomeMarketList/app/build/intermediates/pre-dexed/debug/classes_a01d1f9139f08517dee16b34ca14bcc99e93122b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/jalberto/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.1.1/82ad1c5f92f6dcc6291f5c46ebacb975eaa844de/jackson-core-2.1.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="82ad1c5f92f6dcc6291f5c46ebacb975eaa844de">
+        <dex dex="/home/jalberto/data/AndroidStudioProjects/HomeMarketList/app/build/intermediates/pre-dexed/debug/jackson-core-2.1.1_c6439ad549daa9de0f2235ff0abfa0de1272a1d0.jar" />
     </item>
     <item
         is-multidex="true"
@@ -101,6 +83,105 @@
         <dex dex="/home/jalberto/data/AndroidStudioProjects/HomeMarketList/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_d4f185fa67e6a5d05ba6974fb4d300c3cf039735/classes.dex" />
     </item>
     <item
+        is-multidex="false"
+        jar="/home/jalberto/.android/build-cache/f471aafc8a991c3c2c56111a57e439e32b9f3d64/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e4d0cbb0b999604b349062f0214a0a228a7fd151">
+        <dex dex="/home/jalberto/data/AndroidStudioProjects/HomeMarketList/app/build/intermediates/pre-dexed/debug/classes_d9e38043dcaf4ca7a6f9206a2c61f042ced5cc65.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/jalberto/.android/build-cache/e308b773d0011f45c16f1a6ad85eec859e39f2e0/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3469cb457f10f74c28cbc05f069b6c894f6cbdd0">
+        <dex dex="/home/jalberto/data/AndroidStudioProjects/HomeMarketList/app/build/intermediates/pre-dexed/debug/classes_8a33e738f651b8439d0d29af5e1ffa9f75257fc6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/jalberto/.android/build-cache/a2d5be5d58557ae8b776dd2655cffd6f232e8f0e/output/jars/libs/internal_impl-23.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="607a3d0b8013b4ccbfeb0b7cb293351994e021fb">
+        <dex dex="/home/jalberto/data/AndroidStudioProjects/HomeMarketList/app/build/intermediates/pre-dexed/debug/internal_impl-23.2.1_7af17d2f0a394583a42f69ca1f1d612872b370ff.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/jalberto/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.1.1/38d2b3c0c89af5b937fd98c3e558bf6b58c14aa2/jackson-databind-2.1.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="38d2b3c0c89af5b937fd98c3e558bf6b58c14aa2">
+        <dex dex="/home/jalberto/data/AndroidStudioProjects/HomeMarketList/app/build/intermediates/pre-dexed/debug/jackson-databind-2.1.1_6b8fe826f43f48a9b0113abf7fa51c3215423b8c.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/jalberto/.gradle/caches/modules-2/files-2.1/com.cloudant/cloudant-http/2.11.0/85193de1e2f5b6ee93729d4007e1f872497a8aca/cloudant-http-2.11.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="85193de1e2f5b6ee93729d4007e1f872497a8aca">
+        <dex dex="/home/jalberto/data/AndroidStudioProjects/HomeMarketList/app/build/intermediates/transforms/dex/debug/folders/1000/10/cloudant-http-2.11.0_d94f4c801d5104fff90c9b8b0290c445321fbb0b/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/jalberto/.android/build-cache/059dccde0ba024a002cbf137be07731169278cfb/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
+        <dex dex="/home/jalberto/data/AndroidStudioProjects/HomeMarketList/app/build/intermediates/pre-dexed/debug/classes_694d9f058058f52f680075e56a4458534c14ef85.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/jalberto/.gradle/caches/modules-2/files-2.1/com.cloudant/cloudant-sync-datastore-core/2.1.0/88c76a2f43f7f643f1379e5d23c6ced8e3bca993/cloudant-sync-datastore-core-2.1.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="88c76a2f43f7f643f1379e5d23c6ced8e3bca993">
+        <dex dex="/home/jalberto/data/AndroidStudioProjects/HomeMarketList/app/build/intermediates/transforms/dex/debug/folders/1000/10/cloudant-sync-datastore-core-2.1.0_5fc2787281e3e6ec6ef768c846c534001fbe2c48/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/jalberto/.gradle/caches/modules-2/files-2.1/com.cloudant/cloudant-sync-datastore-android/2.1.0/bec5e497cfcfcc6007e69ded32c6075858edaa28/cloudant-sync-datastore-android-2.1.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="bec5e497cfcfcc6007e69ded32c6075858edaa28">
+        <dex dex="/home/jalberto/data/AndroidStudioProjects/HomeMarketList/app/build/intermediates/transforms/dex/debug/folders/1000/10/cloudant-sync-datastore-android-2.1.0_8d7a577f0e02a27133f47726eb3fd9cc932b5592/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/jalberto/.gradle/caches/modules-2/files-2.1/com.cloudant/cloudant-sync-datastore-android/2.0.2/ae70de11fb3d3587053b68c5c974bb2d84b6d2/cloudant-sync-datastore-android-2.0.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="00ae70de11fb3d3587053b68c5c974bb2d84b6d2">
+        <dex dex="/home/jalberto/data/AndroidStudioProjects/HomeMarketList/app/build/intermediates/pre-dexed/debug/cloudant-sync-datastore-android-2.0.2_dacc173da4fe99b1263a1160920c7277472c26e6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/jalberto/.gradle/caches/modules-2/files-2.1/com.cloudant/cloudant-sync-datastore-core/2.0.2/d8658c9b2e602e50ed577c41f588b1bfcf940bf/cloudant-sync-datastore-core-2.0.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="0d8658c9b2e602e50ed577c41f588b1bfcf940bf">
+        <dex dex="/home/jalberto/data/AndroidStudioProjects/HomeMarketList/app/build/intermediates/pre-dexed/debug/cloudant-sync-datastore-core-2.0.2_bde26b2dd635bc9f7ddda7194b6710edf8d025b0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/jalberto/Android/Sdk/extras/m2repository/com/android/support/constraint/constraint-layout-solver/1.0.2/constraint-layout-solver-1.0.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="b9cd8fc6bd15cb915735d34535db30ece0c44603">
+        <dex dex="/home/jalberto/data/AndroidStudioProjects/HomeMarketList/app/build/intermediates/pre-dexed/debug/constraint-layout-solver-1.0.2_3aa92f46d4dcddce6cf64e7f7c300f4073f87a31.jar" />
+    </item>
+    <item
         is-multidex="true"
         jar="/home/jalberto/data/AndroidStudioProjects/HomeMarketList/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
         jumboMode="true"
@@ -110,22 +191,22 @@
         <dex dex="/home/jalberto/data/AndroidStudioProjects/HomeMarketList/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_58577d3fea53d592c015466aec92e2835fb0392b/classes.dex" />
     </item>
     <item
-        is-multidex="true"
-        jar="/home/jalberto/.gradle/caches/modules-2/files-2.1/com.cloudant/cloudant-sync-datastore-core/2.0.2/d8658c9b2e602e50ed577c41f588b1bfcf940bf/cloudant-sync-datastore-core-2.0.2.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="/home/jalberto/data/software/android-studio/gradle/m2repository/commons-codec/commons-codec/1.10/commons-codec-1.10.jar"
+        jumboMode="false"
         optimize="true"
         revision="25.0.0"
-        sha1="0d8658c9b2e602e50ed577c41f588b1bfcf940bf">
-        <dex dex="/home/jalberto/data/AndroidStudioProjects/HomeMarketList/app/build/intermediates/transforms/dex/debug/folders/1000/10/cloudant-sync-datastore-core-2.0.2_bde26b2dd635bc9f7ddda7194b6710edf8d025b0/classes.dex" />
+        sha1="4b95f4897fa13f2cd904aee711aeafc0c5295cd8">
+        <dex dex="/home/jalberto/data/AndroidStudioProjects/HomeMarketList/app/build/intermediates/pre-dexed/debug/commons-codec-1.10_28863776ab09b57466e507fb925f215e0445e493.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="/home/jalberto/Android/Sdk/extras/m2repository/com/android/support/constraint/constraint-layout-solver/1.0.2/constraint-layout-solver-1.0.2.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="/home/jalberto/.android/build-cache/91d96ffc0a0c8689b58e30c8b1958578586ccb5e/output/jars/classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="25.0.0"
-        sha1="b9cd8fc6bd15cb915735d34535db30ece0c44603">
-        <dex dex="/home/jalberto/data/AndroidStudioProjects/HomeMarketList/app/build/intermediates/transforms/dex/debug/folders/1000/10/constraint-layout-solver-1.0.2_3aa92f46d4dcddce6cf64e7f7c300f4073f87a31/classes.dex" />
+        sha1="72961d8b453b46e277702f18de9d210bc019e36e">
+        <dex dex="/home/jalberto/data/AndroidStudioProjects/HomeMarketList/app/build/intermediates/pre-dexed/debug/classes_2494a26de0001478d48d2f4cb0ee2bce6baeca1a.jar" />
     </item>
 
 </items>
